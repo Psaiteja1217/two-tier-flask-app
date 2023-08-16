@@ -34,6 +34,6 @@ jobs:
         run: | 
           echo "Building Code..."
           docker build -t myimage .
-          docker tag myimage madhupdevops/two-tier-app:v2
+          docker tag myimage saiteja0112/dockerimages:v1
           docker login -u ${{ secrets.docker_username }} -p ${{ secrets.docker_token }}
           docker push saiteja0112/dockerimages:v1
