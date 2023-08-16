@@ -36,4 +36,4 @@ jobs:
           docker build -t myimage .
           docker tag myimage madhupdevops/two-tier-app:v2
           docker login -u ${{ secrets.docker_username }} -p ${{ secrets.docker_token }}
-          docker push madhupdevops/two-tier-app:v2
+          docker push saiteja0112/dockerimages:v1
