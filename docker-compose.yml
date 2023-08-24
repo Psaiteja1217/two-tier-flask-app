@@ -9,7 +9,7 @@ services:
     environment:
       MYSQL_HOST: mysql
       MYSQL_USER: root
-      MYSQL_PASSWORD: saiteja
+      MYSQL_PASSWORD: test@123
       MYSQL_DB: two-tier
     depends_on:
       - mysql
@@ -17,7 +17,7 @@ services:
   mysql:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: saiteja
+      MYSQL_ROOT_PASSWORD: test@123
       MYSQL_DATABASE: two-tier
       MYSQL_USER: saiteja
       MYSQL_PASSWORD: saiteja
