@@ -8,17 +8,17 @@ services:
       - "5000:5000"
     environment:
       MYSQL_HOST: mysql
-      MYSQL_USER: saiteja
+      MYSQL_USER: root
       MYSQL_PASSWORD: saiteja
-      MYSQL_DB: my_db
+      MYSQL_DB: two-tier
     depends_on:
       - mysql
 
   mysql:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: devops
-      MYSQL_DATABASE: my_db
+      MYSQL_ROOT_PASSWORD: saiteja
+      MYSQL_DATABASE: two-tier
       MYSQL_USER: saiteja
       MYSQL_PASSWORD: saiteja
     volumes:
