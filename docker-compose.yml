@@ -10,7 +10,7 @@ services:
       MYSQL_HOST: mysql
       MYSQL_USER: root
       MYSQL_PASSWORD: test@123
-      MYSQL_DB: two-tier
+      MYSQL_DB: two_tier
     depends_on:
       - mysql
 
